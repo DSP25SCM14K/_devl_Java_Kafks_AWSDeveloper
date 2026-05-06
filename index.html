@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dev Kumar portfolio focused on Java 17, Spring Boot, Kafka event streaming, AWS Lambda, API Gateway, DynamoDB, CloudWatch, CodePipeline, Docker, EKS, JUnit, Mockito, and observable microservices."
+    />
+    <title>Dev Kumar | Java Kafka AWS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <div class="signal-field" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="Dev Kumar home">
+          <span class="brand-mark">DK</span>
+          <span>Dev Kumar</span>
+        </a>
+        <div class="nav-links" aria-label="Primary navigation">
+          <a href="#systems">Systems</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+        </div>
+        <a class="nav-action" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="section-inner hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Java 17 / Spring Boot / Kafka / AWS / EKS</p>
+            <h1>
+              I build event-driven services that stay
+              <span id="dynamicText" class="dynamic-text">predictable under load.</span>
+            </h1>
+            <p class="hero-lede">
+              Senior engineer building Java and AWS microservices with Spring Boot, Kafka producers and consumers,
+              REST APIs, Lambda, API Gateway, DynamoDB, Docker, Kubernetes, CodePipeline, JUnit, Mockito, CloudWatch,
+              and AWS CLI automation. I care about the small engineering choices that keep distributed workflows clear:
+              topic keys, offset commits, idempotency, retry behavior, deploy gates, and runtime signals.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button ghost" href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+            </div>
+          </div>
+
+          <aside class="service-console reveal" aria-label="Java Kafka AWS service console">
+            <div class="console-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="console-body">
+              <div class="console-row active">
+                <span>api</span>
+                <strong>REST, OpenAPI, API Gateway, Spring controllers</strong>
+              </div>
+              <div class="console-row">
+                <span>events</span>
+                <strong>Kafka topics, keys, partitions, consumer groups</strong>
+              </div>
+              <div class="console-row">
+                <span>safety</span>
+                <strong>offset commits, idempotency, retries, DLQ thinking</strong>
+              </div>
+              <div class="console-row">
+                <span>data</span>
+                <strong>DynamoDB, S3, low-latency persistence, SDK clients</strong>
+              </div>
+              <div class="console-row">
+                <span>ship</span>
+                <strong>CodePipeline, CodeBuild, Docker, EKS, Helm</strong>
+              </div>
+              <div class="console-row">
+                <span>verify</span>
+                <strong>JUnit 5, Mockito, CloudWatch alarms, traces</strong>
+              </div>
+            </div>
+            <div class="quality-panel">
+              <span>release confidence</span>
+              <div class="meter"><i></i></div>
+              <strong>event consumed, state written, signal visible</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="metric-band" aria-label="Impact highlights">
+        <div class="metric">
+          <strong>99.99%</strong>
+          <span>uptime across business domains</span>
+        </div>
+        <div class="metric">
+          <strong>500K+</strong>
+          <span>monthly requests supported</span>
+        </div>
+        <div class="metric">
+          <strong>80%+</strong>
+          <span>test coverage driven</span>
+        </div>
+        <div class="metric">
+          <strong>2 days</strong>
+          <span>release cycles after CI/CD</span>
+        </div>
+      </section>
+
+      <section id="systems" class="section systems-section">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Event architecture habit</p>
+            <h2>From API contract to Kafka event, durable state, and monitored release</h2>
+            <p>
+              The engineering work I keep choosing is the quiet work that makes event pipelines dependable: narrow API
+              contracts, stable topic keys, consumer groups that recover cleanly, idempotent writes, repeatable deploys,
+              and dashboards that explain behavior before customers have to.
+            </p>
+          </div>
+
+          <div class="diagram-panel reveal">
+            <svg class="event-diagram" viewBox="0 0 1200 620" role="img" aria-labelledby="diagramTitle diagramDesc">
+              <title id="diagramTitle">Java Kafka AWS delivery loop</title>
+              <desc id="diagramDesc">
+                Diagram showing API Gateway, Spring Boot services, Kafka topics and partitions, consumer groups,
+                idempotency and offset handling, DynamoDB and S3 persistence, CloudWatch, CodePipeline, and EKS.
+              </desc>
+              <defs>
+                <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#30d8c4" />
+                  <stop offset="38%" stop-color="#f6c85f" />
+                  <stop offset="72%" stop-color="#83a8ff" />
+                  <stop offset="100%" stop-color="#ff7b92" />
+                </linearGradient>
+                <filter id="glow">
+                  <feGaussianBlur stdDeviation="3" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <path class="flow-line cyan" d="M212 172 C232 78, 246 78, 266 172" />
+              <path class="flow-line yellow" d="M452 172 C472 78, 486 78, 506 172" />
+              <path class="flow-line green" d="M716 172 C736 78, 750 78, 770 172" />
+              <path class="flow-line blue" d="M956 172 C976 78, 990 78, 1010 172" />
+              <path class="branch-line yellow" d="M875 232 C884 276, 884 300, 875 340" />
+              <path class="branch-line blue" d="M618 232 C618 278, 618 300, 618 342" />
+              <path class="branch-line pink" d="M998 404 C948 458, 822 474, 706 434" />
+              <path class="branch-line green" d="M500 426 C386 468, 248 440, 172 392" />
+              <path class="branch-line violet" d="M704 380 C838 338, 964 334, 1058 366" />
+
+              <g class="node cyan" transform="translate(42 112)">
+                <rect width="170" height="120" rx="8" />
+                <text x="85" y="46" text-anchor="middle">API edge</text>
+                <text x="85" y="78" text-anchor="middle">Gateway | REST</text>
+              </g>
+
+              <g class="node yellow" transform="translate(266 100)">
+                <rect width="186" height="144" rx="8" />
+                <text x="93" y="52" text-anchor="middle">Spring Boot</text>
+                <text x="93" y="84" text-anchor="middle">Java 17 service</text>
+              </g>
+
+              <g class="node green" transform="translate(506 100)">
+                <rect width="210" height="144" rx="8" />
+                <text x="105" y="46" text-anchor="middle">Kafka topics</text>
+                <text x="105" y="78" text-anchor="middle">keys | partitions</text>
+                <text x="105" y="108" text-anchor="middle">schemas | events</text>
+              </g>
+
+              <g class="node blue" transform="translate(770 100)">
+                <rect width="186" height="144" rx="8" />
+                <text x="93" y="46" text-anchor="middle">Consumers</text>
+                <text x="93" y="78" text-anchor="middle">groups | poll</text>
+                <text x="93" y="108" text-anchor="middle">bounded work</text>
+              </g>
+
+              <g class="node pink" transform="translate(1010 100)">
+                <rect width="170" height="144" rx="8" />
+                <text x="85" y="46" text-anchor="middle">State safety</text>
+                <text x="85" y="78" text-anchor="middle">offset commit</text>
+                <text x="85" y="108" text-anchor="middle">idempotency</text>
+              </g>
+
+              <g class="node teal" transform="translate(746 340)">
+                <rect width="258" height="126" rx="8" />
+                <text x="129" y="46" text-anchor="middle">Data plane</text>
+                <text x="129" y="78" text-anchor="middle">DynamoDB | S3</text>
+              </g>
+
+              <g class="node violet" transform="translate(1010 330)">
+                <rect width="170" height="132" rx="8" />
+                <text x="85" y="48" text-anchor="middle">Operations</text>
+                <text x="85" y="80" text-anchor="middle">CloudWatch</text>
+                <text x="85" y="108" text-anchor="middle">alarms | CLI</text>
+              </g>
+
+              <g class="node orange" transform="translate(500 342)">
+                <rect width="206" height="132" rx="8" />
+                <text x="103" y="48" text-anchor="middle">Delivery</text>
+                <text x="103" y="80" text-anchor="middle">CodePipeline</text>
+                <text x="103" y="108" text-anchor="middle">Docker | EKS</text>
+              </g>
+
+              <g class="note" transform="translate(42 332)">
+                <rect width="344" height="116" rx="8" />
+                <text class="note-title" x="24" y="36">WORK I KEEP CHOOSING</text>
+                <text class="note-line" x="24" y="66">make event pipelines predictable</text>
+                <text class="note-line small" x="24" y="92">under real load and real failure modes</text>
+              </g>
+
+              <g class="trace" transform="translate(430 514)">
+                <rect width="354" height="76" rx="8" />
+                <text class="trace-title" x="22" y="32">build - test - consume - observe</text>
+                <text class="trace-line" x="22" y="56">runtime signals shape the next release</text>
+              </g>
+            </svg>
+          </div>
+
+          <div class="craft-grid">
+            <article class="craft-card reveal">
+              <span class="craft-index">01</span>
+              <h3>Key the event stream</h3>
+              <p>
+                I like Kafka topics that make ordering and ownership explicit: stable keys, readable event names,
+                versioned payloads, and partitions that match the workload instead of surprising it later.
+              </p>
+            </article>
+            <article class="craft-card reveal">
+              <span class="craft-index">02</span>
+              <h3>Protect the consumer</h3>
+              <p>
+                Poll loops, bounded workers, offset commits, retries, and idempotency turn downstream slowness into a
+                controlled system behavior instead of duplicate state transitions.
+              </p>
+            </article>
+            <article class="craft-card reveal">
+              <span class="craft-index">03</span>
+              <h3>Operate the release</h3>
+              <p>
+                A deploy is not finished at image push. I care about CloudWatch metrics, alarms, rollback paths,
+                scripts, and enough logs to explain the first failure clearly.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section experience-section">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Professional experience</p>
+            <h2>Java microservices, Kafka workflows, AWS workloads, CI/CD, containers, testing, and observability</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-meta">
+                <span>Mar 2025 - Present</span>
+                <strong>Sprouts AI</strong>
+              </div>
+              <div class="timeline-content">
+                <h3>Software Engineer (Java / AWS / Microservices)</h3>
+                <p class="location">Chicago, IL</p>
+                <ul>
+                  <li>
+                    Designed and built microservices in Core Java 17 and TypeScript fronted by REST APIs through AWS API
+                    Gateway, with AWS Lambda functions for event-driven workloads and DynamoDB for low-latency
+                    persistence - supporting 1K+ daily requests at 99.9% uptime and sub-800ms p95 latency.
+                  </li>
+                  <li>
+                    Built Kafka-based event streaming for AI hiring workflow lifecycle events
+                    (candidate.profile.updated, job.created, match.score.generated, interview.slot.created,
+                    ats.sync.completed) - fixed a consumer-rebalance bug from slow ATS/calendar downstream calls by
+                    keeping the poll loop lightweight, moving work to a bounded worker pool, lowering max.poll.records,
+                    committing offsets only after success, and adding workflowId + eventType + version idempotency to
+                    prevent duplicate state transitions.
+                  </li>
+                  <li>
+                    Implemented CI/CD using AWS CodePipeline and CodeBuild - automating build, test (JUnit + Mockito),
+                    Docker image push, and Kubernetes (EKS) deployment, with CloudWatch dashboards and alarms for runtime
+                    observability and incident response.
+                  </li>
+                  <li>
+                    Wrote unit and integration tests with Mockito and JUnit 5 for service layers, controllers, and
+                    AWS-SDK clients - driving 80%+ coverage and catching regression defects before release; managed
+                    cloud resources via AWS CLI scripting and IaC; containerized services with Docker multi-stage builds
+                    and orchestrated through Kubernetes.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-meta">
+                <span>Aug 2023 - Mar 2025</span>
+                <strong>Resilience Inc</strong>
+              </div>
+              <div class="timeline-content">
+                <h3>Software Engineer (Java / TypeScript / AWS)</h3>
+                <p class="location">Chicago, IL</p>
+                <ul>
+                  <li>
+                    Built REST APIs and microservices in Java (Spring Boot) and TypeScript (Node.js) on AWS - Lambda,
+                    API Gateway, DynamoDB, S3, and CloudWatch - scaling to 500K+ monthly requests with horizontal
+                    autoscaling and event-driven workflows.
+                  </li>
+                  <li>
+                    Built and maintained Docker container images and Kubernetes deployments on EKS - with Helm charts,
+                    ConfigMaps, and rolling deployments - cutting release cycles from 2 weeks to 2 days.
+                  </li>
+                  <li>
+                    Authored Mockito-based unit tests and integration tests, integrated into AWS CodePipeline and GitLab
+                    CI gates - reducing production incidents 45% through earlier defect detection.
+                  </li>
+                  <li>
+                    Automated AWS resource provisioning, log queries, and operational tasks through AWS CLI and Bash
+                    scripting - accelerating environment promotion and recovery procedures.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-meta">
+                <span>Apr 2018 - Aug 2023</span>
+                <strong>Tata Steel</strong>
+              </div>
+              <div class="timeline-content">
+                <h3>Software Engineer (Java / Cloud / Microservices)</h3>
+                <ul>
+                  <li>
+                    Architected enterprise microservices in Core Java (Spring Boot) on AWS and Azure with Docker and
+                    Kubernetes - achieving 99.99% uptime and 40% faster API response times across 5+ business domains
+                    for 40K+ users.
+                  </li>
+                  <li>
+                    Built Kafka-based event-driven workflows for training/operational status events (employeeId,
+                    trainingId, departmentId, status, eventTimestamp) - keyed topics by employeeId + trainingId so
+                    related events landed on the same partition for ordering, then resolved hot-partition issues on
+                    high-volume departments by pulling the training/workflow ID into the partition key while keeping
+                    department as filter metadata.
+                  </li>
+                  <li>
+                    Led a 12-person engineering team through full Agile SDLC - design reviews, JUnit/Mockito test
+                    strategy, Git-based CI/CD on Jenkins, and JIRA-driven delivery - cutting production incidents 50%.
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Selected projects</p>
+            <h2>Streaming systems, cloud services, product apps, and source links</h2>
+            <p>Demo and source-code links are separated wherever a live demo exists.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card featured reveal">
+              <h3>Real-Time Stock Market Analysis Pipeline</h3>
+              <p>
+                Streaming pipeline on AWS demonstrating Java-friendly service design, event processing, monitoring, and
+                low-latency data movement.
+              </p>
+              <div class="tags">
+                <span>AWS</span>
+                <span>Streaming</span>
+                <span>Monitoring</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link source" href="https://github.com/devthedevil/Realtime-Stock-Market-Analysis" target="_blank" rel="noreferrer">Source code</a>
+              </div>
+            </article>
+
+            <article class="project-card featured reveal">
+              <h3>CME MDP 3.0 Multicast Feed Handler</h3>
+              <p>
+                Low-latency multicast feed handler demonstrating protocol parsing, networking, and systems-level
+                performance engineering for event-heavy workloads.
+              </p>
+              <div class="tags">
+                <span>C++</span>
+                <span>Networking</span>
+                <span>Performance</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link source" href="https://github.com/devthedevil/CME-Multicast-Market-Data-Feed-Handler-C-" target="_blank" rel="noreferrer">Source code</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <h3>AskMyStore</h3>
+              <p>
+                Full-stack commerce AI app with retrieval-backed responses, webhook thinking, and product-facing
+                workflow design.
+              </p>
+              <div class="tags">
+                <span>Commerce AI</span>
+                <span>Retrieval</span>
+                <span>REST</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link demo" href="https://askmystore.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+                <a class="project-link source" href="https://github.com/devthedevil/AskMyStore" target="_blank" rel="noreferrer">Source code</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <h3>TradeSentinel</h3>
+              <p>
+                Market monitoring dashboard focused on signal visibility, portfolio state, and practical decision
+                support for active workflows.
+              </p>
+              <div class="tags">
+                <span>Dashboard</span>
+                <span>Signals</span>
+                <span>Monitoring</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link demo" href="https://tradesentinel.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+                <a class="project-link source" href="https://github.com/devthedevil/tradesentinel" target="_blank" rel="noreferrer">Source code</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <h3>LangChain Chat with Search</h3>
+              <p>
+                AI-assisted search workflow using LangChain patterns, external lookup, and response synthesis for
+                retrieval-backed product behavior.
+              </p>
+              <div class="tags">
+                <span>AI</span>
+                <span>Search</span>
+                <span>Python</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link source" href="https://github.com/devthedevil/LangChain-Chat-with-Search" target="_blank" rel="noreferrer">Source code</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <h3>STRANGERS</h3>
+              <p>
+                Scalable social platform with front-end flows, REST integration, persistence, and full-stack product
+                paths.
+              </p>
+              <div class="tags">
+                <span>Full stack</span>
+                <span>REST</span>
+                <span>Persistence</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link source" href="https://github.com/devthedevil/Strangers" target="_blank" rel="noreferrer">Source code</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <h3>EXPOS Experimental Operating System</h3>
+              <p>
+                Operating-system project covering paging, scheduling, process management, system calls, and low-level
+                debugging discipline.
+              </p>
+              <div class="tags">
+                <span>OS</span>
+                <span>C</span>
+                <span>Systems</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link source" href="https://github.com/devthedevil/EXPOS" target="_blank" rel="noreferrer">Source code</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <h3>Linux Character Device Driver</h3>
+              <p>
+                Kernel-level driver work with open/read/write/release/ioctl behavior and tight feedback between code,
+                logs, and system behavior.
+              </p>
+              <div class="tags">
+                <span>C</span>
+                <span>Kernel</span>
+                <span>Driver</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link source" href="https://github.com/devthedevil/Character-Device-Driver" target="_blank" rel="noreferrer">Source code</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <h3>16-Bit RISC Processor</h3>
+              <p>
+                Verilog processor with custom ISA, ALU, control unit, and simulation-oriented verification thinking.
+              </p>
+              <div class="tags">
+                <span>Verilog</span>
+                <span>RISC</span>
+                <span>Hardware</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link source" href="https://github.com/devthedevil/Hardware-lab" target="_blank" rel="noreferrer">Source code</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <h3>Pitch Perfect</h3>
+              <p>
+                iOS audio app for recording and transforming voice playback, showing mobile interaction, state, and
+                user-flow implementation.
+              </p>
+              <div class="tags">
+                <span>iOS</span>
+                <span>Audio</span>
+                <span>Mobile</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link source" href="https://github.com/devthedevil/Pitch_Perfect" target="_blank" rel="noreferrer">Source code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section research-section">
+        <div class="section-inner research-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Publication</p>
+            <h2>Measuring behavior before improving systems</h2>
+            <p>
+              The IEEE paper compared recommendation approaches through feature engineering and improved error
+              functions. That same habit of isolating variables, measuring outcomes, and improving the path shows up in
+              event design, test strategy, and runtime tuning.
+            </p>
+          </div>
+          <div class="research-card reveal">
+            <h3>A Comparative Study of Movie Recommendation Systems</h3>
+            <p>
+              Research on collaborative, content-based, and hybrid recommendation models with source code and certificate
+              linked separately.
+            </p>
+            <div class="project-links">
+              <a class="project-link paper" href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Paper</a>
+              <a class="project-link source" href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">Source code</a>
+              <a class="project-link certificate" href="https://drive.google.com/file/d/1rayr6Cht6quyLUJOXWOAcBi_rxQp2Ol0/view" target="_blank" rel="noreferrer">Certificate</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Dev Kumar</span>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
