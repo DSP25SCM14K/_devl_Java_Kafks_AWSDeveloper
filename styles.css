@@ -814,7 +814,8 @@ h3 {
   .nav-links {
     order: 3;
     width: 100%;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    overflow: visible;
     padding-bottom: 4px;
   }
 
